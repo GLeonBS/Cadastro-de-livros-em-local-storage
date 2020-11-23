@@ -7,4 +7,4 @@ export class Book extends Document {
         this.volume = volume;
     }
 }
-export default Document;
+export default Book;
