@@ -1,0 +1,64 @@
+body {
+    position: relative;
+    font-family: 'Century Gothic';
+}
+form{
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 5px 2px 5px #707070;
+    background-color: white;
+    margin: 10px;
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+}
+.centralizer {
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+}
+
+form h1{
+    margin-bottom: 20px;
+    color: #707070;
+    font-size: 30px;
+}
+form .inputs{
+    width: 95%;
+    box-shadow: 5px 2px 5px #707070;
+    border:0px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+form .select{
+    width: 100%;
+    box-shadow: 5px 2px 5px #707070;
+    border:0px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+form select{
+    width: 43%;
+    box-shadow: 5px 2px 5px #707070;
+    border: 0px;
+    border-radius:10px ;
+    padding: 10px;
+    outline: none;
+}
+
+ form button{
+    width: 30%;
+    padding: 10px ;
+    border: 0px;
+    border-radius:20px;
+    padding: 10px;
+    outline: none;
+    cursor: pointer;
+} 
+
+.form button:hover{
+    margin: 0px 5px 0px 0px;
+}
