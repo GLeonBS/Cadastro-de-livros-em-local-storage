@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de pessoas</title>
+    <style>
+        body {
+            position: relative;
+        }
+
+        .centralizer {
+            left: 50%;
+            position: absolute;
+            transform: translateX(-50%);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="centralizer">
+        <h1>Cadastro de Pessoas</h1>
+        <p>
+            Preencha os dados desejados de cada pessoa para cadastrar.
+        </p>
+
+        <form novalidate>
+            <h3>Nome:<input id="name" placeholder="Insira um nome" autocomplete="name"></h3>
+            <h3>Data de nascimento:<input id="birth" type="date"></h3>
+            <select id="gender" required>
+                <option value="">Selecione o sexo</option>
+                <option value="f">Feminino</option>
+                <option value="m">Masculino</option>
+            </select>
+            <button>Salvar</button>
+        </form>
+        <p id="message"></p>
+    </div>
+    <script src="cadastro-person.js" type="module"></script>
+</body>
+
+</html>
