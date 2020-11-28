@@ -11,16 +11,16 @@
 <body>
     <form novalidate>
         <h1>Cadastro de Pessoas</h1>
-        <h4>Nome:<input id="name" placeholder="Insira um nome" autocomplete="name" class="inputs"></h4>
-        <h4>Data de nascimento:<input id="birth" type="date" class="inputs"></h4><br>
-        <select id="gender" required class="select">
+        <h4>Nome:<input id="name" placeholder="Insira um nome" autocomplete="name" class="inputs" required></h4>
+        <h4>Data de nascimento:<input id="birth" type="date" class="inputs" required></h4><br>
+        <select id="gender" class="select" required>
             <option value="">Selecione o sexo</option>
             <option value="f">Feminino</option>
             <option value="m">Masculino</option>
         </select><br> <br>
         <button>Cadastrar</button><br><br>
+        <p id="message">Bem-vindo ao Cadastro de Pessoas!</p>
     </form>
-    <p id="message"></p>
     <script src="cadastro-person.js" type="module"></script>
 </body>
 

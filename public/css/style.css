@@ -13,11 +13,6 @@ form{
     position: absolute;
     transform: translateX(-50%);
 }
-.centralizer {
-    left: 50%;
-    position: absolute;
-    transform: translateX(-50%);
-}
 
 form h1{
     margin-bottom: 20px;
@@ -50,7 +45,7 @@ form select{
 }
 
  form button{
-    width: 30%;
+    width: 100%;
     padding: 10px ;
     border: 0px;
     border-radius:20px;
