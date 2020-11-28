@@ -62,6 +62,10 @@ form.addEventListener('submit', (e: Event) => {
     message.innerText = "Ocorreu algum erro."
     return
   }
+  name.value = ''
+  birth.value = ''
+  gender.value = ''
+  
   message.innerText = 'Cadastrado com Sucesso!'
 })
 
