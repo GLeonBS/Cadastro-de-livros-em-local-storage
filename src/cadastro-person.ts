@@ -13,7 +13,6 @@ name.focus()
 
 form.addEventListener('submit', (e: Event) => {
   e.preventDefault()
-
   const valorNome = name.value.trim()
   const valorBirth = new Date(birth.value.trim())
   const valorGender = gender.value.trim()
@@ -40,6 +39,7 @@ form.addEventListener('submit', (e: Event) => {
   }
   const dataNascimento = new Date(`${birth.value}T00:00:00`)
   console.log(birth.value)
+  
 
   if (Date.now() - Number(dataNascimento) < 0) {
     message.innerText = 'Digite uma data de nascimento válida!'
