@@ -127,11 +127,30 @@ div button:hover{
     cursor: pointer;
     font-size: medium;
     text-decoration: none ;
-    background-color:#BFCDD9;
+    background-color:#F2F2F2;
     width: 30px;
     transition:0.3s;
 }
 a img:hover{
-    background-color: #F2F2F2;
+    background-color:#BFCDD9;
 
 }
+.clear{
+    text-align: top;
+    width: 10%;
+    float: right;
+    margin-top: 10px;
+    border-radius: 100%;
+    padding: 10px;
+}
+
+.btnClear{
+    display: none;
+}
+table, table th, table tr {
+    margin: 10px;
+    border: 1px solid #BFCDD9;
+}
+
+
+
