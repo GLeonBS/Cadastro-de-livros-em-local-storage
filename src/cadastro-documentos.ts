@@ -209,7 +209,14 @@ btn.addEventListener('click', (e: Event) => {
             const isbnNumb = parseInt(isbn.value)
             const editionNumb = parseInt(edition.value)
             const volumeNumb = parseInt(volume.value)
-            const livro = new Book(isbnNumb, editionNumb, volumeNumb, capitalize(trimAll(title.value)), subtitle.value, dataPub, person)
+            const livro = new Book(
+                isbnNumb,
+                editionNumb,
+                volumeNumb,
+                capitalize(trimAll(title.value)),
+                subtitle.value,
+                dataPub,
+                person)
 
             books.push(livro)
             localStorage.setItem('books', JSON.stringify(books))
@@ -370,17 +377,17 @@ function showPeriodical() {
 
 filterBook.addEventListener("keyup", filter)
 function filter() {
-  if (!filterBook.value) {
-    showBooks()
-  } else {
-    let personsLocalStorage: Array<Book> = JSON.parse(localStorage.getItem("books")!)
+    if (!filterBook.value) {
+        showBooks()
+    } else {
+        let personsLocalStorage: Array<Book> = JSON.parse(localStorage.getItem("books")!)
 
-    const onlyTitle = (obj: typeof personsLocalStorage[0]) => obj.title.includes(filterBook.value)
+        const onlyTitle = (obj: typeof personsLocalStorage[0]) => obj.title.includes(filterBook.value)
 
-    let filtrar = personsLocalStorage.filter(onlyTitle)
-    let lines = ''
-    for (const titulos of filtrar) {
-        lines += `
+        let filtrar = personsLocalStorage.filter(onlyTitle)
+        let lines = ''
+        for (const titulos of filtrar) {
+            lines += `
         <tr>
            <td>${(titulos as Book).title}</td>
            <td>${(titulos as Book).subtitle}</td>
@@ -393,9 +400,9 @@ function filter() {
         `
 
 
-    }
+        }
 
-    table.innerHTML = `
+        table.innerHTML = `
   <thead>
     <tr> 
         <th>Titulo:</th>
@@ -411,22 +418,22 @@ function filter() {
     ${lines}
   </tbody>
   `
-}
+    }
 }
 
 filterPer.addEventListener("keyup", filter1)
 function filter1() {
-  if (!filterPer.value) {
-    showPeriodical()
-  } else {
-    let personsLocalStorage: Array<Book> = JSON.parse(localStorage.getItem("periodicos")!)
+    if (!filterPer.value) {
+        showPeriodical()
+    } else {
+        let personsLocalStorage: Array<Book> = JSON.parse(localStorage.getItem("periodicos")!)
 
-    const onlyTitle = (obj: typeof personsLocalStorage[0]) => obj.title.includes(filterPer.value)
+        const onlyTitle = (obj: typeof personsLocalStorage[0]) => obj.title.includes(filterPer.value)
 
-    let filtrar = personsLocalStorage.filter(onlyTitle)
-    let lines = ''
-    for (const titulos of filtrar) {
-        lines += `
+        let filtrar = personsLocalStorage.filter(onlyTitle)
+        let lines = ''
+        for (const titulos of filtrar) {
+            lines += `
         <tr>
            <td>${(titulos as Book).title}</td>
            <td>${(titulos as Book).subtitle}</td>
@@ -439,9 +446,9 @@ function filter1() {
         `
 
 
-    }
+        }
 
-    table.innerHTML = `
+        table.innerHTML = `
   <thead>
     <tr> 
         <th>Titulo:</th>
@@ -457,16 +464,17 @@ function filter1() {
     ${lines}
   </tbody>
   `
-}
+    }
 }
 
 btnClear.addEventListener('click', (e: Event) => {
     e.preventDefault()
     filterBook.value = ""
     filterPer.value = ""
-    if(selectType.value == 'l'){
+    if (selectType.value == 'l') {
         showBooks()
-    }else if (selectType.value == 'p'){
+    } else if (selectType.value == 'p') {
         showPeriodical()
     }
 })
+
