@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de documentos</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+    <form>
+        <a href="index.html" class ="fakeBtn"><img src="img/back.png"></a>
+        <h1 id="titulo">O que você deseja cadastrar?</h1><br><br>
+        <select id="tipo" class="select" required>
+            <option value="" style="color: #0f1414">Selecione um opção:</option>
+            <option value="l" style="color: #0f1414">Livros</option>
+            <option value="p" style="color: #0f1414">Periódicos</option>
+        </select><br> <br>
+        <!-- Livro -->
+        <input id="title" placeholder="Digite o título:" class="inputs_doc">
+        <input id="subtitle" placeholder="Digite o subtítulo:" class="inputs_doc">
+        <input id="publishedAt" type="date" class="inputs_doc">
+        <select id="author" class="inputs_doc">
+        </select>
+        <input id="volume" placeholder="Digite o volume:" class="inputs_doc">
+        <input id="isbn" placeholder="Digite o código isbn:" class="inputs_doc">
+        <input id="edition" placeholder="Digite a edição:" class="inputs_doc">
+
+        <!-- Periódicos -->
+        <input id="issn" placeholder="Digite o código issn:" class="inputs_doc">
+        <input id="issue" placeholder="Digite a issue:" class="inputs_doc">
+        <button id="btnDoc" class="btn_doc">Cadastrar</button>
+        <p id='message' class="message">Cadastre ou pesquise um livro ou periódico aqui!</p>
+        <input id="filterBook" placeholder="Procure um livro:" class="inputs_doc">
+        <input id="filterPer" placeholder="Procure um Periódico:" class="inputs_doc">
+        <button id="limparPesquisa" class="btnClear">Limpar Pesquisa</button>
+        <table></table>
+    </form>
+
+    <script src="cadastro-documentos.js" type="module"></script>
+</body>
+
+</html>

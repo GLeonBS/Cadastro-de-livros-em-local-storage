@@ -1,0 +1,156 @@
+*{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #BFCDD9;
+}
+body {
+    position: relative;
+    background-color: #F2F2F2;
+}
+form{
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 5px 2px 5px #0f1414;
+    background-color:#1A2526;
+    margin: 10px;
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+    width: 35%;
+}
+
+form h1{
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+form .inputs{
+    width: 95%;
+    box-shadow: 5px 2px 5px  #0f1414;
+    border:0px;
+    border-radius: 10px;
+    padding: 10px;
+    color: #1A2526;
+}
+
+form .select{
+    width: 100%;
+    box-shadow: 5px 2px 5px  #0f1414;
+    border:0px;
+    border-radius: 10px;
+    padding: 10px;
+    color: #0f1414 ;
+    font-size: medium;
+}
+
+form select{
+    width: 43%;
+    box-shadow: 5px 2px 5px #0f1414;
+    border: 0px;
+    border-radius:10px ;
+    padding: 10px;
+    outline: none;
+    color:  #0f1414;
+}
+
+ form button{
+    width: 100%;
+    padding: 10px ;
+    border: 0px;
+    border-radius:20px;
+    padding: 10px;
+    outline: none;
+    cursor: pointer;
+    color:  #0f1414;
+    font-size: medium;
+}
+.btn_doc{
+    width: 100%;
+    padding: 10px ;
+    border: 0px;
+    border-radius:20px;
+    padding: 10px;
+    outline: none;
+    cursor: pointer;
+    display: none;
+}  
+
+form button:hover{
+    background-color: #BFCDD9;
+}
+
+form .inputs_doc{
+    width: 95%;
+    box-shadow: 5px 2px 5px  #0f1414;
+    border:0px;
+    border-radius: 10px;
+    padding: 10px;
+    display: none;
+    color: #0f1414;
+    line-height: 20px;
+    margin-bottom: 10px;
+}
+.message{
+    text-align: center;
+    font-size: large;
+}
+div{
+    margin-top: 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 5px 2px 5px #0f1414;
+    background-color:#1A2526;
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+    width: 40%;
+}
+div button{
+    width: 100%;
+    padding: 10px ;
+    border: 0px;
+    border-radius:20px;
+    padding: 10px;
+    outline: none;
+    cursor: pointer;
+    color:  #0f1414;
+    font-size: medium;
+}
+div button:hover{
+    background-color: #BFCDD9;
+}
+ a img{
+    border: 0px;
+    border-radius:100%;
+    padding: 10px;
+    outline: none;
+    cursor: pointer;
+    font-size: medium;
+    text-decoration: none ;
+    background-color:#F2F2F2;
+    width: 30px;
+    transition:0.3s;
+}
+a img:hover{
+    background-color:#BFCDD9;
+
+}
+.clear{
+    text-align: top;
+    width: 10%;
+    float: right;
+    margin-top: 10px;
+    border-radius: 100%;
+    padding: 10px;
+}
+
+.btnClear{
+    display: none;
+}
+table, table th, table tr {
+    margin: 10px;
+    border: 1px solid #BFCDD9;
+}
+
+
+
