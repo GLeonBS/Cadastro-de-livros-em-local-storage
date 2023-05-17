@@ -1,6 +1,6 @@
 import Book from "./entities/Book.js"
 import Periodical from "./entities/Periodical.js"
-import Person from "./entities/Person"
+import Person from "./entities/Person.js"
 
 const selectType = document.querySelector<HTMLSelectElement>('#tipo')!
 const title = document.querySelector<HTMLInputElement>('#title')!
@@ -13,7 +13,6 @@ const volume = document.querySelector<HTMLInputElement>('#volume')!
 const issn = document.querySelector<HTMLInputElement>('#issn')!
 const issue = document.querySelector<HTMLInputElement>('#issue')!
 const message = document.querySelector<HTMLParagraphElement>('#message')!
-const formulario = document.querySelector<HTMLFormElement>('form')!
 const btn = document.querySelector<HTMLButtonElement>('#btnDoc')!
 const titulo = document.querySelector<HTMLTitleElement>('#titulo')!
 const table = document.querySelector('table')!
@@ -36,7 +35,7 @@ function carregarAuthor() {
     }
 }
 
-selectType.addEventListener('change', (event) => {
+selectType.addEventListener('change', () => {
     // fazer if se seleção igual a book (aparecer campos da class)
     if (selectType.value == "l") {
         titulo.innerText = "Cadastro de Livros:"

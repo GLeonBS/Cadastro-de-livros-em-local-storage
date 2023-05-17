@@ -1,16 +1,15 @@
 {
-  "name": "cadastro-de-livros-em-local-storage",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "appbooks",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "dev": "ts-node ./public/ ",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "ts-node": "^10.9.1"
+  "devDependencies": {
+    "typescript": "^5.0.2",
+    "vite": "^4.3.2"
   }
 }

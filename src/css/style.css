@@ -16,7 +16,6 @@ form{
     left: 50%;
     position: absolute;
     transform: translateX(-50%);
-    width: 35%;
 }
 
 form h1{
@@ -137,10 +136,10 @@ a img:hover{
 }
 .clear{
     text-align: top;
-    width: 10%;
+    width: 80px;
     float: right;
-    margin-top: 10px;
-    border-radius: 100%;
+    margin: 10px;
+    width: 150px;
     padding: 10px;
 }
 
@@ -148,6 +147,7 @@ a img:hover{
     display: none;
 }
 table, table th, table tr {
+    width: 100%;
     margin: 10px;
     border: 1px solid #BFCDD9;
 }
